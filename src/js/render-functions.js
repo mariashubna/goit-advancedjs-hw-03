@@ -1,11 +1,3 @@
-import SimpleLightbox from 'simplelightbox';
-import 'simplelightbox/dist/simple-lightbox.min.css';
-
-let galleryLink = new SimpleLightbox('.gallery-link', {
-  captionDelay: 250,
-  captionsData: 'alt',
-});
-
 function createCardsMarkup(cards) {
   return cards
     .map(
@@ -38,8 +30,6 @@ function createCardsMarkup(cards) {
       }
     )
     .join('');
-
-    galleryLink.refresh();
 }
 
 export default createCardsMarkup;
